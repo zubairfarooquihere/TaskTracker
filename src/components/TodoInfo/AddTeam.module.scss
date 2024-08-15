@@ -1,0 +1,145 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 27rem;
+  width: 40rem;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 177;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 17px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+  &__input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  &__result {
+    position: absolute;
+    left: 25%;
+    top: 110%;
+    height: 100px;
+    width: 320px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    overflow-y: scroll;
+    
+    ul {
+
+      li {
+        cursor: pointer;
+        margin-top: 3px;
+      }
+    }
+  }
+
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+}
+
+.team {
+  &__header {
+    margin-top: 17px;
+    font-size: 21px;
+  }
+
+  &__persons {
+    align-items: center;
+    margin-top: 17px;
+    width: 100%;
+    height: 289px;
+
+    &--header {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      width: 90%;
+      font-size: 17px;
+    }
+
+    &--details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      width: 90%;
+    }
+  }
+}
+
+.button {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+
+  &__cancel {
+    cursor: pointer;
+    border-radius: 15rem;
+    padding: 7px 17px;
+    background-color: gainsboro;
+  }
+  &__save {
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 15rem;
+    padding: 7px 21px;
+    background-color: greenyellow;
+  }
+}
+
+
+.table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto; /* Center the table */
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.cell {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+
+.cell:last-child {
+  border-right: none; /* Remove right border for last cell */
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}

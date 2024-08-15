@@ -1,0 +1,24 @@
+.navbar {
+  height: 57px;
+  //width: 100%;
+  //background-color: rgb(17, 122, 17);
+  background-color: #65b7d2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: white;
+
+  &__button {
+    /* navbar button styles */
+
+    &--btn {
+      /* navbar button btn styles */
+
+      font-size: inherit;
+      background-color: transparent;
+      padding: 0;
+      margin: 0 9px;
+    }
+  }
+}
