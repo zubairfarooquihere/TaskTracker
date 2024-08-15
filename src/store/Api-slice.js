@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const ApiSlice = createSlice({
   name: "Api",
   initialState: {
-    address: true ? 'http://localhost:8080/' : 'https://todo-backend-uai2.onrender.com/',
+    address: false ? 'http://localhost:8080/' : 'https://todo-backend-uai2.onrender.com/',
   },
   reducers: {
     changeName(state, action) {
